@@ -26,8 +26,11 @@ $(document).ready(function(){
 		$('h1').css('color','green');
 		
 	});
-	$('#dugme1').click(function(){
-		$('h1').css('color','green');
+	$('#dugme2').click(function(){
+		$.get("kako god/index.php",function(data){
+		$('h1').after('<center><h1>' + data + '</h1></center>'
+);
+		});
 		
 	});
 	
