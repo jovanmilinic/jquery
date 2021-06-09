@@ -10,9 +10,9 @@
 <body>
 
 <center><h1>jQuery</h1></center>
-<center><button id="prvo">Pritisni</button></center>
+<center><button id="dugme1">dugme1</button></center>
 <br>		
-<center><button id="drugo">Dugme 2</button></center>	
+<center><button id="dugme2">Dugme 2</button></center>	
 
 
 </body>
@@ -22,17 +22,11 @@
 
 <script>
 $(document).ready(function(){
-	$('#prvo').click(function(){
-		$('h1').css('color','red');
-		$('h1').css('font-size','70px');
-		$('h1').after('<h2>AJAX</h2>');
+	$('#dugme1').click(function(){
+		$('h1').css('color','green');
 		
 	});
-	$('#drugo').click(function(){
-			$.get("lokacija/osma.php", function(data){
-    				$('h2').after('<center>'+data+'</center>');
-  			});
-	});
+	
 });
 
 </script>
