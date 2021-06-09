@@ -12,7 +12,7 @@
 <center><h1>jQuery</h1></center>
 <center><button id="dugme1">dugme1</button></center>
 <br>		
-<center><button id="dugme2">Dugme 2</button></center>	
+<center><button id="dugme2">dugme 2</button></center>	
 
 
 </body>
@@ -22,6 +22,10 @@
 
 <script>
 $(document).ready(function(){
+	$('#dugme1').click(function(){
+		$('h1').css('color','green');
+		
+	});
 	$('#dugme1').click(function(){
 		$('h1').css('color','green');
 		
